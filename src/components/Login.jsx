@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí deberías agregar la lógica para validar el login
+    // Credenciales para el login
     if (username === 'user' && password === 'pass') {
       setIsLoggedIn(true);
     }
