@@ -26,15 +26,31 @@ const TaskForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    // <form onSubmit={handleSubmit}>
+    //   <input
+    //     type='text'
+    //     value={title}
+    //     onChange={(e) => setTitle(e.target.value)}
+    //     placeholder='Nueva tarea...'
+    //   />
+    //   <button type='submit'>Agregar</button>
+    // </form>
+    <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
       <input
-        type='text'
+        type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        placeholder='Nueva tarea...'
+        placeholder="Nueva tarea..."
+        className="py-3 px-4 rounded-md bg-gray-100 w-full md:w-[400px] focus:outline-none focus:ring-2 focus:ring-indigo-400"
       />
-      <button type='submit'>Agregar</button>
+      <button
+        type="submit"
+        className="py-3 px-6 bg-indigo-500 text-white rounded-md font-semibold w-full md:w-[400px] hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+      >
+        Agregar
+      </button>
     </form>
+
   );
 };
 
